@@ -22,7 +22,7 @@ export default function BannerPage() {
           alt="Banner Background"
           className="backgroundImage"
         />
-        <Image src={image} alt="Model" className="foregroundImage" />
+        {/* <Image src={} alt="Model" className="foregroundImage" /> */}
       </div>
     </div>
   );
