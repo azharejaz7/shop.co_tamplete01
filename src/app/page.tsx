@@ -4,7 +4,7 @@ import BannerPage from "./component/Banner";
 export default function Home() {
   return (
     
-    <div>
+    <div className="container">
     <BannerPage/>
 
      

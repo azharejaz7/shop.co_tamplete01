@@ -5,9 +5,10 @@ import React from "react";
 import Image from "next/image";
 import { Html, Head, Main, NextScript } from 'next/document';
 import { useState } from "react";
-import SearIcon from './asset/icon/SearchIcon.png'
-import addToCartIcon from '../assets/icon/AddtocartIcon.png'
-import PersonIcon from '../assets/icon/PersonIcon.png'
+import SearIcon from './asset/icon/SearchIcon.svg'
+import addToCartIcon from '../assets/icon/AddtocartIcon.svg'
+import PersonIcon from '../assets/icon/PersonIcon.svg'
+<link href="https://db.onlinewebfonts.com/c/2bf16335573007d828f4197c2b884c04?family=Satoshi" rel="stylesheet" type="text/css"/>
 
 
 
@@ -61,9 +62,10 @@ const Navbar: React.FC = () => {
             className="search-bar"
             placeholder="Search for products..."
           />
+          <button className="icon-btn"><Image src={addToCartIcon} alt="Person Icon"></Image></button>
           <button className="icon-btn"><Image src={PersonIcon} alt="Person Icon"></Image></button>
-          <button className="icon-btn"></button>
-          <span className="material-symbols-outlined">search</span>
+          
+          
         </div>
       </nav>
     </>
