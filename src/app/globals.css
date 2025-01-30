@@ -7,9 +7,11 @@
   src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot");
 }
 
+
+
 /* Reset */
 body {
-  width: 100%;
+  width: 1440px;
   height: 4370px;
   gap: 0px;
   opacity: 0px;
@@ -18,13 +20,34 @@ body {
 /* Notification Banner */
 .notification-banner {
   display: flex;
-  /* --justify-content: space-between; */
-  text-align: center;
+  justify-content: space-between; /* Pushes content apart */
+  align-items: center; /* Centers items vertically */
   background-color: black;
   color: white;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-family: "Satoshi";
+  font-size: 12px;
+  font-family: "Satoshi", sans-serif;
+  height: 30px;
+  padding: 0 20px; /* Adds spacing inside the banner */
+  position: relative;
+}
+.notification-banner p {
+  flex: 1; /* Allows text to take remaining space */
+  text-align: center; /* Centers the text */
+  margin: 0; /* Removes default margin */
+}
+
+.notification-banner .close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+ text-align: left;
+}
+.notification-banner .close-btn button{
+  flex: 1;
+  align-items: right;
+  margin: 0%;
 }
 
 .notification-banner .sign-up-link {
@@ -36,13 +59,7 @@ body {
   color: #67b4ff;
 }
 
-.notification-banner .close-btn {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-}
+
 
 .notification-banner .close-btn:hover {
   color: #888;
@@ -112,6 +129,7 @@ body {
   font-size: 18px;
   cursor: pointer;
   font-family: "Satoshi";
+ 
 }
 
 .icon-btn:hover {
@@ -151,12 +169,12 @@ body {
   opacity: 0px;
   background-color: #f2f0f1; /* Match background color */
   overflow: hidden;
+  
 }
 
 .textSection {
-  flex: 1;
   padding: 40px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .heading {
@@ -186,26 +204,90 @@ body {
 }
 
 .imageSection {
-  flex: 1;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 663PX;
+  width: auto;
+  z-index:0;
+
 }
 
+
+
+
 .backgroundImage {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
+  height: 663px;
+  width: auto;
+  background-size: cover; /* Adjust to fit the container */
+  background-position: center;
+  transform: scale(1.3); 
+  
 }
 
 .foregroundImage {
   position: relative;
   align-items: right;
-  z-index: 2;
+  z-index: -1;
   width: auto;
   height: 100%;
   object-fit: cover;
 }
+
+.starSmall{
+width: 56px;
+height: 56px;
+top: 431px;
+left: 750px;
+gap: 0px;
+opacity: 0px;
+z-index: 4;
+
+}
+
+.starNormal {
+
+width: 104px;
+height: 104px;
+opacity: 0px;
+z-index: 3;
+margin-top: -90%;
+}
+
+
+/* Brand Component Css */
+
+.Brands{
+  display: flex;
+  justify-content: space-around;
+ 
+  padding: 22px 0 22px 0;
+  width: 1440px;
+  background-color: #000000;
+}
+
+
+/* New Arrivals */
+.NewArrivalHeading {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  /* Allow full width */
+  /* Prevent excessive expansion */
+  height: 58px;
+  text-align: center !important;
+ 
+  padding: 30px;
+}
+
+.NewArrivalHeading span {
+  font-family: "Integral CF Regular";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  display: block !important; /* Ensures span respects flexbox */
+  text-align: center !important;
+ 
+}
+
