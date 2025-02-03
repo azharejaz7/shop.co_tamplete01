@@ -286,8 +286,16 @@ margin-top: -90%;
   font-size: 48px;
   font-weight: 700;
   line-height: 57.6px;
-  display: block !important; /* Ensures span respects flexbox */
+ 
   text-align: center !important;
  
 }
 
+
+.product{
+width: 295px;
+height: 298px;
+border-radius: 20px 0px 0px 0px;
+
+
+}
